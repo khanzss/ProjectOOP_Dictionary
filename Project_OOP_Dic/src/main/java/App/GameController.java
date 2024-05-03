@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 public class GameController implements Initializable {
     public ListQuestion listQuestion = new ListQuestion();
     public int x = 0;
-    public String path = "C:/Users/ADMIN/Desktop/Proj_OOP_Dic/Project_OOP_Dic/src/main/resources/question.txt";
+    public String path = "Project_OOP_Dic/src/main/resources/question.txt";
 
     public Button checkBtn, nextBtn;
     public RadioButton choiceA, choiceB, choiceC, choiceD;

@@ -21,7 +21,7 @@ public class AddController implements Initializable {
     public Button addbtn;
 
     public Label successalert;
-    String path = "C:/Users/ADMIN/Desktop/Proj_OOP_Dic/Project_OOP_Dic/src/main/resources/dictionary.txt";
+    String path = "Project_OOP_Dic/src/main/resources/dictionary.txt";
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

@@ -39,7 +39,7 @@ public class SearchController implements Initializable {
     private Button removeBtn,soundBtn, editBtn,  saveBtn;
     private Dictionary dictionary = Dictionary.getInstance();
     private DictionaryManagement dictionaryManagement = DictionaryManagement.getInstance();
-    private final String path = "C:/Users/ADMIN/Desktop/Proj_OOP_Dic/Project_OOP_Dic/src/main/resources/dictionary.txt";
+    private final String path = "Project_OOP_Dic/src/main/resources/dictionary.txt";
 
     ObservableList<String> list = FXCollections.observableArrayList();
 

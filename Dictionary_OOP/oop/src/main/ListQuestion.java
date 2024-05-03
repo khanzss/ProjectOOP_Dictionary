@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ListQuestion extends ArrayList<Question> {
-    public static String path = "C:/Users/ADMIN/Desktop/Dictionary_OOP/oop/src/main/question.txt";
+    public static String path = "Dictionary_OOP/oop/src/main/question.txt";
     public void insertFromFile() {
         File f = new File(path);
         try {
