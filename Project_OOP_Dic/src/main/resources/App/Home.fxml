@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="351.0" prefWidth="600.0" style="-fx-background-color: whitee;" styleClass="bottom" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.DicController">
+   <children>
+      <Pane prefHeight="351.0" prefWidth="106.0" style="-fx-background-color: black;">
+         <children>
+            <VBox layoutY="64.0" prefHeight="250.0" prefWidth="106.0">
+               <children>
+                  <Button fx:id="homebtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: black;" text="Home " textFill="WHITE" />
+                  <Button fx:id="searchbtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: black;" text="Search" textFill="WHITE" />
+                  <Button fx:id="translatebtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: black;" text="Translate" textFill="WHITE" />
+                  <Button fx:id="addbtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: black;" text="Add" textFill="WHITE" />
+                  <Button fx:id="gamebtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="112.0" style="-fx-background-color: black;" text="Game" textFill="WHITE" />
+               </children>
+            </VBox>
+            <Label alignment="CENTER" layoutY="10.0" prefHeight="60.0" prefWidth="106.0" text="KD-ictionary" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="314.0" prefHeight="37.0" prefWidth="600.0" style="-fx-background-color: black;">
+         <children>
+            <Button layoutY="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="44.0" style="-fx-background-color: black;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/communication.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="44.0" layoutY="2.0" minWidth="44.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="44.0" style="-fx-background-color: black;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Img/github-mark-white.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <effect>
+            <Reflection />
+         </effect>
+      </Pane>
+      <AnchorPane fx:id="container" layoutX="106.0" layoutY="-1.0" prefHeight="315.0" prefWidth="494.0">
+         <children>
+            <ImageView fx:id="homeimg" fitHeight="315.0" fitWidth="494.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/Screenshot%202024-05-02%20020729.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

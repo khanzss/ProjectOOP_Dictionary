@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="316.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SearchController">
+   <children>
+      <AnchorPane fx:id="container" prefHeight="316.0" prefWidth="494.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutX="213.0" layoutY="7.0" prefHeight="302.0" prefWidth="274.0" style="-fx-background-color: black;">
+               <children>
+                  <TextArea fx:id="explainField" layoutX="6.0" layoutY="53.0" prefHeight="242.0" prefWidth="261.0" style="-fx-border-radius: 12px;" />
+                  <Label fx:id="searchedWord" layoutX="12.0" layoutY="10.0" prefHeight="33.0" prefWidth="77.0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font></Label>
+                  <Button fx:id="removeBtn" layoutX="105.0" layoutY="6.0" minWidth="36.0" mnemonicParsing="false" onAction="#handleClickRemoveBtn" prefHeight="38.0" prefWidth="36.0" style="-fx-background-color: black;" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/bin.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="soundBtn" layoutX="145.0" layoutY="6.0" minWidth="36.0" mnemonicParsing="false" onAction="#handleClickSoundBtn" prefHeight="38.0" prefWidth="36.0" style="-fx-background-color: black;" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/sound.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="editBtn" layoutX="185.0" layoutY="6.0" minWidth="36.0" mnemonicParsing="false" onAction="#handleClickEditBtn" prefHeight="38.0" prefWidth="36.0" style="-fx-background-color: black;" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/writing%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button fx:id="saveBtn" layoutX="225.0" layoutY="6.0" minWidth="35.0" mnemonicParsing="false" onAction="#handleClickSaveBtn" prefHeight="38.0" prefWidth="36.0" style="-fx-background-color: black;" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Img/diskette%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="7.0" prefHeight="302.0" prefWidth="200.0" style="-fx-background-color: black;">
+               <children>
+                  <TextField fx:id="searchField" layoutX="8.0" layoutY="8.0" prefHeight="38.0" prefWidth="185.0" promptText="Nhập từ cần tìm" style="-fx-background-color: white;" />
+                  <ListView fx:id="searchList" layoutX="8.0" layoutY="54.0" onMouseClicked="#handleClickSearchedWord" prefHeight="242.0" prefWidth="185.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

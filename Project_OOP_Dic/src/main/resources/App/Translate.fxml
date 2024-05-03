@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="313.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.TranslateController">
+   <children>
+      <AnchorPane fx:id="container" prefHeight="315.0" prefWidth="494.0" style="-fx-background-color: white;" />
+      <AnchorPane prefHeight="315.0" prefWidth="494.0">
+         <children>
+            <Button fx:id="translateBtn" layoutX="194.0" layoutY="142.0" mnemonicParsing="false" onAction="#onClicktranslateBtn" prefHeight="33.0" prefWidth="106.0" style="-fx-background-color: black;" text="Dịch" textFill="WHITE" />
+            <TextArea fx:id="translateTarget" layoutX="40.0" layoutY="15.0" prefHeight="110.0" prefWidth="414.0" promptText="Nhập từ cần dịch" />
+            <TextArea fx:id="translateExplain" layoutX="40.0" layoutY="192.0" prefHeight="110.0" prefWidth="414.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

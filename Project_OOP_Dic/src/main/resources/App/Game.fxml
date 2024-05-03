@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="299.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.GameController">
+   <children>
+      <AnchorPane fx:id="container" layoutX="2.0" prefHeight="315.0" prefWidth="494.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="checkBtn" layoutX="76.0" layoutY="268.0" mnemonicParsing="false" onAction="#ClickCheckBtn" style="-fx-background-color: black;" text="Submit" textFill="WHITE" />
+            <Button fx:id="nextBtn" layoutX="356.0" layoutY="267.0" mnemonicParsing="false" onAction="#ClickNextBtn" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: black;" text="Next" textFill="WHITE" />
+            <VBox layoutX="54.0" layoutY="123.0" prefHeight="107.0" prefWidth="386.0" spacing="15.0">
+               <children>
+                  <RadioButton fx:id="choiceA" layoutX="6.0" layoutY="62.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="choiceB" layoutX="6.0" layoutY="80.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="choiceC" layoutX="6.0" layoutY="97.0" mnemonicParsing="false" />
+                  <RadioButton fx:id="choiceD" layoutX="6.0" layoutY="115.0" mnemonicParsing="false" />
+               </children>
+            </VBox>
+            <Label fx:id="result" layoutX="199.0" layoutY="263.0" prefHeight="34.0" prefWidth="96.0" />
+            <Label fx:id="question" layoutX="40.0" layoutY="18.0" prefHeight="79.0" prefWidth="414.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
